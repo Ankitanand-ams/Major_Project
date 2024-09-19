@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/ol-geocoder.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        }
+        .tile{
+            align-items: center;
+            text-align: center;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title class="Title">Harnessing Maxent and Web GIS for Urban Tree Species Habitat Prediction and Visualization in Asansol Municipal Corporation (West Bengal)</title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+<script src="resources/proj4.js"></script>
+        <script>proj4.defs('EPSG:32645','+proj=utm +zone=45 +datum=WGS84 +units=m +no_defs');</script>
+        <script src="resources/polyfills.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/ol-geocoder.js"></script>
+        <script src="layers/ForMangiferaindicaMangoSpecies_1.js"></script><script src="layers/ForFicusbenghalensisBanyanSpecies_3.js"></script><script src="layers/ForCocosnuciferaCoconutSpecies_5.js"></script><script src="layers/ForButeamonospermaPalashSpecies_7.js"></script><script src="layers/ForAzadirachtaindicaNeemSpecies_9.js"></script><script src="layers/ForArtocarpusheterophyllusKathalSpecies_11.js"></script><script src="layers/SoilType_40.js"></script><script src="layers/LULC_44.js"></script><script src="layers/OccurrencePointofMagniferaindicaMango_67.js"></script><script src="layers/OccurrencePointofFicusbenghalenisBanyan_68.js"></script><script src="layers/OccurrencePointofCocosnuciferaCoconut_69.js"></script><script src="layers/OccurrencePointofButeamonospermaPalash_70.js"></script><script src="layers/OccurrencePointofAzadirachtaindicaNeem_71.js"></script><script src="layers/OccurrencePointofArtocarpusheterophyllusKathal_72.js"></script><script src="layers/Study_Area_73.js"></script>
+        <script src="styles/ForMangiferaindicaMangoSpecies_1_style.js"></script><script src="styles/ForFicusbenghalensisBanyanSpecies_3_style.js"></script><script src="styles/ForCocosnuciferaCoconutSpecies_5_style.js"></script><script src="styles/ForButeamonospermaPalashSpecies_7_style.js"></script><script src="styles/ForAzadirachtaindicaNeemSpecies_9_style.js"></script><script src="styles/ForArtocarpusheterophyllusKathalSpecies_11_style.js"></script><script src="styles/SoilType_40_style.js"></script><script src="styles/LULC_44_style.js"></script><script src="styles/OccurrencePointofMagniferaindicaMango_67_style.js"></script><script src="styles/OccurrencePointofFicusbenghalenisBanyan_68_style.js"></script><script src="styles/OccurrencePointofCocosnuciferaCoconut_69_style.js"></script><script src="styles/OccurrencePointofButeamonospermaPalash_70_style.js"></script><script src="styles/OccurrencePointofAzadirachtaindicaNeem_71_style.js"></script><script src="styles/OccurrencePointofArtocarpusheterophyllusKathal_72_style.js"></script><script src="styles/Study_Area_73_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
