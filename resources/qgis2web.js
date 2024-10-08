@@ -471,13 +471,13 @@ var Abstract = new ol.control.Control({
             window.showAbstract = function() {
                 linkElement.classList.remove("project-abstract");
                 linkElement.classList.add("project-abstract-uncollapsed");
-                linkElement.innerHTML = 'A WEB GIS Application <br />     Developed by <br />      Ankit Anand <br /> (SSJUPS2201640003)<br /><br /><br />Contact:-<br />17ankitanand@gmail.com<br />8709603971<br />linkedin.com/in/ankit-anand-335117223';
+                linkElement.innerHTML = 'A WEB GIS Application <br />     Developed by <br />      Ankit Anand <br /> (SSJUPS2201640003)<br /> Under the Guidance of <br /> Dr. Abhinav Mehta Founder CEO (TGIS)<br />Contact:-<br />17ankitanand@gmail.com<br />8709603971<br />linkedin.com/in/ankit-anand-335117223';
             }
 
             hideAbstract();
         } else {
             linkElement.classList.add("project-abstract-uncollapsed");
-            linkElement.innerHTML = 'A WEB GIS Application <br />     Developed by <br />      Ankit Anand <br /> (SSJUPS2201640003)<br /><br /><br />Contact:-<br />17ankitanand@gmail.com<br />8709603971<br />linkedin.com/in/ankit-anand-335117223';
+            linkElement.innerHTML = 'A WEB GIS Application <br />     Developed by <br />      Ankit Anand <br /> (SSJUPS2201640003)<br /> Under the Guidance of <br /> Dr. Abhinav Mehta Founder CEO (TGIS)<br />Contact:-<br />17ankitanand@gmail.com<br />8709603971<br />linkedin.com/in/ankit-anand-335117223';
         }
 
         titleElement.appendChild(linkElement);
